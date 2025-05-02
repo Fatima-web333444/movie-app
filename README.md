@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Movie App
 
-## Getting Started
+This is my **first project** built using **Next.js** and **TypeScript**. It's a simple movie app that fetches data from [TMDB (The Movie Database)](https://www.themoviedb.org/) and displays information like top-rated, now-playing, and upcoming movies.
 
-First, run the development server:
+## 🌟 Features
+
+- 🔍 Browse top-rated, now-playing, and upcoming movies
+- 🎥 View movie details, including trailer, rating, and overview
+- 📽️ YouTube trailer embedded on each movie's page
+- ✨ Clean and responsive UI using **Tailwind CSS**
+- ⚙️ Built with Next.js 13+ App Router and TypeScript
+
+## 🛠️ Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TMDB API](https://developer.themoviedb.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## 📸 Screenshots
+
+*Add some screenshots here if you'd like (optional)*
+
+## 🚀 Getting Started
+
+To run this project locally:
 
 ```bash
+git clone https://github.com/Fatima-web333444/movie-app.git
+cd movie-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure to create a .env.local file and add your TMDB API key:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ini
+Copy
+Edit
+TMDB_API_KEY=your_api_key_here
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📦 Folder Structure
+css
+Copy
+Edit
+src/
+├── app/
+│   ├── api/
+│   ├── movie/[id]/
+│   ├── top-rated/
+│   └── upcoming/
+├── components/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📚 Learnings
+Learned how to use Next.js App Router
 
-## Learn More
+Gained experience working with TypeScript in React
 
-To learn more about Next.js, take a look at the following resources:
+Understood how to make API calls and handle async data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Practiced Tailwind CSS for responsive UI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💻 Live Demo
+Coming soon...
