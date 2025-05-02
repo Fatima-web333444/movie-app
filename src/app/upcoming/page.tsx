@@ -1,7 +1,6 @@
 'use client';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { MdOutlineMovie } from 'react-icons/md';
+import Link from 'next/link';
 
 type Movie = {
   id: number;
@@ -9,19 +8,19 @@ type Movie = {
   poster_path: string;
 };
 
-export default function Home() {
+export default function UpcomingPage() {
   const [movies, setMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
-    fetch('/api/now-playing')
+    fetch('/api/upcoming')
       .then((res) => res.json())
       .then((data) => setMovies(data.results));
   }, []);
 
   return (
     <main className="p-6">
-      {/* Page Title */}
-      <h1 className="text-3xl font-bold mb-4 text-gray-800"><MdOutlineMovie className="text-blue-500 text-4xl" /> Now Playing Movies</h1>
+            {/* Page Title */}
+      <h1 className="text-3xl font-bold mb-4 text-gray-800">🎬 Upcoming Movies</h1>
 
       {/* Movie Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
